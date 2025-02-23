@@ -10,10 +10,10 @@
  * Do not edit the class manually.
  */
 
-import { CharacterSchema } from '../models/CharacterSchema';
-import { CooldownSchema } from '../models/CooldownSchema';
-import { MapSchema } from '../models/MapSchema';
-import { HttpFile } from '../http/http';
+import { CharacterSchema } from '../models/CharacterSchema.ts';
+import { CooldownSchema } from '../models/CooldownSchema.ts';
+import { MapSchema } from '../models/MapSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class CharacterMovementDataSchema {
     /**

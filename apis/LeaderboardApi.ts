@@ -1,17 +1,17 @@
 // TODO: better import syntax?
-import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi';
-import {Configuration} from '../configuration';
-import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http';
-import {ObjectSerializer} from '../models/ObjectSerializer';
-import {ApiException} from './exception';
-import {canConsumeForm, isCodeInRange} from '../util';
-import {SecurityAuthentication} from '../auth/auth';
+import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi.ts';
+import {Configuration} from '../configuration.ts';
+import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http.ts';
+import {ObjectSerializer} from '../models/ObjectSerializer.ts';
+import {ApiException} from './exception.ts';
+import {canConsumeForm, isCodeInRange} from '../util.ts';
+import {SecurityAuthentication} from '../auth/auth.ts';
 
 
-import { AccountLeaderboardType } from '../models/AccountLeaderboardType';
-import { CharacterLeaderboardType } from '../models/CharacterLeaderboardType';
-import { DataPageAccountLeaderboardSchema } from '../models/DataPageAccountLeaderboardSchema';
-import { DataPageCharacterLeaderboardSchema } from '../models/DataPageCharacterLeaderboardSchema';
+import { AccountLeaderboardType } from '../models/AccountLeaderboardType.ts';
+import { CharacterLeaderboardType } from '../models/CharacterLeaderboardType.ts';
+import { DataPageAccountLeaderboardSchema } from '../models/DataPageAccountLeaderboardSchema.ts';
+import { DataPageCharacterLeaderboardSchema } from '../models/DataPageCharacterLeaderboardSchema.ts';
 
 /**
  * no description

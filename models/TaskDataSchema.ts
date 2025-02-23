@@ -10,10 +10,10 @@
  * Do not edit the class manually.
  */
 
-import { CharacterSchema } from '../models/CharacterSchema';
-import { CooldownSchema } from '../models/CooldownSchema';
-import { TaskSchema } from '../models/TaskSchema';
-import { HttpFile } from '../http/http';
+import { CharacterSchema } from '../models/CharacterSchema.ts';
+import { CooldownSchema } from '../models/CooldownSchema.ts';
+import { TaskSchema } from '../models/TaskSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class TaskDataSchema {
     /**

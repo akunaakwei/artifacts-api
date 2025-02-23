@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { LogSchema } from '../models/LogSchema';
-import { HttpFile } from '../http/http';
+import { LogSchema } from '../models/LogSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageLogSchema {
     'data': Array<LogSchema>;

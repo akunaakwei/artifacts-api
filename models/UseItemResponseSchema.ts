@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { UseItemSchema } from '../models/UseItemSchema';
-import { HttpFile } from '../http/http';
+import { UseItemSchema } from '../models/UseItemSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class UseItemResponseSchema {
     'data': UseItemSchema;

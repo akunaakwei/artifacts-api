@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { GEOrderTransactionSchema } from '../models/GEOrderTransactionSchema';
-import { HttpFile } from '../http/http';
+import { GEOrderTransactionSchema } from '../models/GEOrderTransactionSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class GECreateOrderTransactionResponseSchema {
     'data': GEOrderTransactionSchema;

@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { BadgeSchema } from '../models/BadgeSchema';
-import { HttpFile } from '../http/http';
+import { BadgeSchema } from '../models/BadgeSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageBadgeSchema {
     'data': Array<BadgeSchema>;

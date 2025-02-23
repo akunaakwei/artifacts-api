@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { CharacterMovementDataSchema } from '../models/CharacterMovementDataSchema';
-import { HttpFile } from '../http/http';
+import { CharacterMovementDataSchema } from '../models/CharacterMovementDataSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class CharacterMovementResponseSchema {
     'data': CharacterMovementDataSchema;

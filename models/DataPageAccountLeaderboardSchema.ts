@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { AccountLeaderboardSchema } from '../models/AccountLeaderboardSchema';
-import { HttpFile } from '../http/http';
+import { AccountLeaderboardSchema } from '../models/AccountLeaderboardSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageAccountLeaderboardSchema {
     'data': Array<AccountLeaderboardSchema>;

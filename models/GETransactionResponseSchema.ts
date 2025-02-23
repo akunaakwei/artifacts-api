@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { GETransactionListSchema } from '../models/GETransactionListSchema';
-import { HttpFile } from '../http/http';
+import { GETransactionListSchema } from '../models/GETransactionListSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class GETransactionResponseSchema {
     'data': GETransactionListSchema;

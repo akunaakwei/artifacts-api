@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { BankItemTransactionSchema } from '../models/BankItemTransactionSchema';
-import { HttpFile } from '../http/http';
+import { BankItemTransactionSchema } from '../models/BankItemTransactionSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class BankItemTransactionResponseSchema {
     'data': BankItemTransactionSchema;

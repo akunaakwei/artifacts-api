@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { AccountDetails } from '../models/AccountDetails';
-import { HttpFile } from '../http/http';
+import { AccountDetails } from '../models/AccountDetails.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class AccountDetailsSchema {
     'data': AccountDetails;

@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { EffectSchema } from '../models/EffectSchema';
-import { HttpFile } from '../http/http';
+import { EffectSchema } from '../models/EffectSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class EffectResponseSchema {
     'data': EffectSchema;

@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { SimpleItemSchema } from '../models/SimpleItemSchema';
-import { HttpFile } from '../http/http';
+import { SimpleItemSchema } from '../models/SimpleItemSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageSimpleItemSchema {
     'data': Array<SimpleItemSchema>;

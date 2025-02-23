@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { CharacterSkin } from '../models/CharacterSkin';
-import { InventorySlot } from '../models/InventorySlot';
-import { HttpFile } from '../http/http';
+import { CharacterSkin } from '../models/CharacterSkin.ts';
+import { InventorySlot } from '../models/InventorySlot.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class CharacterSchema {
     /**

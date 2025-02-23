@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { AccountAchievementSchema } from '../models/AccountAchievementSchema';
-import { HttpFile } from '../http/http';
+import { AccountAchievementSchema } from '../models/AccountAchievementSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageAccountAchievementSchema {
     'data': Array<AccountAchievementSchema>;

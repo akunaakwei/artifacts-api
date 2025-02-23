@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { EquipRequestSchema } from '../models/EquipRequestSchema';
-import { HttpFile } from '../http/http';
+import { EquipRequestSchema } from '../models/EquipRequestSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class EquipmentResponseSchema {
     'data': EquipRequestSchema;

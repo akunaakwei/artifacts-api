@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { CharacterFightDataSchema } from '../models/CharacterFightDataSchema';
-import { HttpFile } from '../http/http';
+import { CharacterFightDataSchema } from '../models/CharacterFightDataSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class CharacterFightResponseSchema {
     'data': CharacterFightDataSchema;

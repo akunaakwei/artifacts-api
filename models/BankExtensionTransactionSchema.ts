@@ -10,10 +10,10 @@
  * Do not edit the class manually.
  */
 
-import { BankExtensionSchema } from '../models/BankExtensionSchema';
-import { CharacterSchema } from '../models/CharacterSchema';
-import { CooldownSchema } from '../models/CooldownSchema';
-import { HttpFile } from '../http/http';
+import { BankExtensionSchema } from '../models/BankExtensionSchema.ts';
+import { CharacterSchema } from '../models/CharacterSchema.ts';
+import { CooldownSchema } from '../models/CooldownSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class BankExtensionTransactionSchema {
     /**

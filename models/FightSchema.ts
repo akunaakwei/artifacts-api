@@ -10,10 +10,10 @@
  * Do not edit the class manually.
  */
 
-import { BlockedHitsSchema } from '../models/BlockedHitsSchema';
-import { DropSchema } from '../models/DropSchema';
-import { FightResult } from '../models/FightResult';
-import { HttpFile } from '../http/http';
+import { BlockedHitsSchema } from '../models/BlockedHitsSchema.ts';
+import { DropSchema } from '../models/DropSchema.ts';
+import { FightResult } from '../models/FightResult.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class FightSchema {
     /**

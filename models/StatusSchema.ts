@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { AnnouncementSchema } from '../models/AnnouncementSchema';
-import { HttpFile } from '../http/http';
+import { AnnouncementSchema } from '../models/AnnouncementSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class StatusSchema {
     /**

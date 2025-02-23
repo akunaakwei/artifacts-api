@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { CharacterSchema } from '../models/CharacterSchema';
-import { HttpFile } from '../http/http';
+import { CharacterSchema } from '../models/CharacterSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class MyCharactersListSchema {
     /**

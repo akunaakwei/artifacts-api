@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { ResourceSchema } from '../models/ResourceSchema';
-import { HttpFile } from '../http/http';
+import { ResourceSchema } from '../models/ResourceSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageResourceSchema {
     'data': Array<ResourceSchema>;

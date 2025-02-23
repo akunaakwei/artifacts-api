@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { BankExtensionTransactionSchema } from '../models/BankExtensionTransactionSchema';
-import { HttpFile } from '../http/http';
+import { BankExtensionTransactionSchema } from '../models/BankExtensionTransactionSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class BankExtensionTransactionResponseSchema {
     'data': BankExtensionTransactionSchema;

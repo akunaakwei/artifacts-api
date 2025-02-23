@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { StatusSchema } from '../models/StatusSchema';
-import { HttpFile } from '../http/http';
+import { StatusSchema } from '../models/StatusSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class StatusResponseSchema {
     'data': StatusSchema;

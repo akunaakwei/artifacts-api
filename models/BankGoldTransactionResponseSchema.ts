@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { BankGoldTransactionSchema } from '../models/BankGoldTransactionSchema';
-import { HttpFile } from '../http/http';
+import { BankGoldTransactionSchema } from '../models/BankGoldTransactionSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class BankGoldTransactionResponseSchema {
     'data': BankGoldTransactionSchema;

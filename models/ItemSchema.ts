@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { CraftSchema } from '../models/CraftSchema';
-import { SimpleEffectSchema } from '../models/SimpleEffectSchema';
-import { HttpFile } from '../http/http';
+import { CraftSchema } from '../models/CraftSchema.ts';
+import { SimpleEffectSchema } from '../models/SimpleEffectSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class ItemSchema {
     /**

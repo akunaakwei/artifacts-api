@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { MapSchema } from '../models/MapSchema';
-import { HttpFile } from '../http/http';
+import { MapSchema } from '../models/MapSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class MapResponseSchema {
     'data': MapSchema;

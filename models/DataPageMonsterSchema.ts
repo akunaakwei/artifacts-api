@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { MonsterSchema } from '../models/MonsterSchema';
-import { HttpFile } from '../http/http';
+import { MonsterSchema } from '../models/MonsterSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageMonsterSchema {
     'data': Array<MonsterSchema>;

@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { EventContentSchema } from '../models/EventContentSchema';
-import { EventMapSchema } from '../models/EventMapSchema';
-import { HttpFile } from '../http/http';
+import { EventContentSchema } from '../models/EventContentSchema.ts';
+import { EventMapSchema } from '../models/EventMapSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class EventSchema {
     /**

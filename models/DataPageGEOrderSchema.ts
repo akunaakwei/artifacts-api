@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { GEOrderSchema } from '../models/GEOrderSchema';
-import { HttpFile } from '../http/http';
+import { GEOrderSchema } from '../models/GEOrderSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageGEOrderSchema {
     'data': Array<GEOrderSchema>;

@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { DropRateSchema } from '../models/DropRateSchema';
-import { SimpleEffectSchema } from '../models/SimpleEffectSchema';
-import { HttpFile } from '../http/http';
+import { DropRateSchema } from '../models/DropRateSchema.ts';
+import { SimpleEffectSchema } from '../models/SimpleEffectSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class MonsterSchema {
     /**

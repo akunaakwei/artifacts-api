@@ -1,16 +1,16 @@
 // TODO: better import syntax?
-import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi';
-import {Configuration} from '../configuration';
-import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http';
-import {ObjectSerializer} from '../models/ObjectSerializer';
-import {ApiException} from './exception';
-import {canConsumeForm, isCodeInRange} from '../util';
-import {SecurityAuthentication} from '../auth/auth';
+import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi.ts';
+import {Configuration} from '../configuration.ts';
+import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http.ts';
+import {ObjectSerializer} from '../models/ObjectSerializer.ts';
+import {ApiException} from './exception.ts';
+import {canConsumeForm, isCodeInRange} from '../util.ts';
+import {SecurityAuthentication} from '../auth/auth.ts';
 
 
-import { DataPageMapSchema } from '../models/DataPageMapSchema';
-import { MapContentType } from '../models/MapContentType';
-import { MapResponseSchema } from '../models/MapResponseSchema';
+import { DataPageMapSchema } from '../models/DataPageMapSchema.ts';
+import { MapContentType } from '../models/MapContentType.ts';
+import { MapResponseSchema } from '../models/MapResponseSchema.ts';
 
 /**
  * no description

@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { BadgeConditionSchema } from '../models/BadgeConditionSchema';
-import { HttpFile } from '../http/http';
+import { BadgeConditionSchema } from '../models/BadgeConditionSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class BadgeSchema {
     /**

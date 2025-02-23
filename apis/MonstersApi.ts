@@ -1,15 +1,15 @@
 // TODO: better import syntax?
-import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi';
-import {Configuration} from '../configuration';
-import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http';
-import {ObjectSerializer} from '../models/ObjectSerializer';
-import {ApiException} from './exception';
-import {canConsumeForm, isCodeInRange} from '../util';
-import {SecurityAuthentication} from '../auth/auth';
+import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi.ts';
+import {Configuration} from '../configuration.ts';
+import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http.ts';
+import {ObjectSerializer} from '../models/ObjectSerializer.ts';
+import {ApiException} from './exception.ts';
+import {canConsumeForm, isCodeInRange} from '../util.ts';
+import {SecurityAuthentication} from '../auth/auth.ts';
 
 
-import { DataPageMonsterSchema } from '../models/DataPageMonsterSchema';
-import { MonsterResponseSchema } from '../models/MonsterResponseSchema';
+import { DataPageMonsterSchema } from '../models/DataPageMonsterSchema.ts';
+import { MonsterResponseSchema } from '../models/MonsterResponseSchema.ts';
 
 /**
  * no description

@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { TaskDataSchema } from '../models/TaskDataSchema';
-import { HttpFile } from '../http/http';
+import { TaskDataSchema } from '../models/TaskDataSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class TaskResponseSchema {
     'data': TaskDataSchema;

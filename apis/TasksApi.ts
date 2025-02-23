@@ -1,19 +1,19 @@
 // TODO: better import syntax?
-import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi';
-import {Configuration} from '../configuration';
-import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http';
-import {ObjectSerializer} from '../models/ObjectSerializer';
-import {ApiException} from './exception';
-import {canConsumeForm, isCodeInRange} from '../util';
-import {SecurityAuthentication} from '../auth/auth';
+import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi.ts';
+import {Configuration} from '../configuration.ts';
+import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http.ts';
+import {ObjectSerializer} from '../models/ObjectSerializer.ts';
+import {ApiException} from './exception.ts';
+import {canConsumeForm, isCodeInRange} from '../util.ts';
+import {SecurityAuthentication} from '../auth/auth.ts';
 
 
-import { DataPageDropRateSchema } from '../models/DataPageDropRateSchema';
-import { DataPageTaskFullSchema } from '../models/DataPageTaskFullSchema';
-import { RewardResponseSchema } from '../models/RewardResponseSchema';
-import { Skill } from '../models/Skill';
-import { TaskFullResponseSchema } from '../models/TaskFullResponseSchema';
-import { TaskType } from '../models/TaskType';
+import { DataPageDropRateSchema } from '../models/DataPageDropRateSchema.ts';
+import { DataPageTaskFullSchema } from '../models/DataPageTaskFullSchema.ts';
+import { RewardResponseSchema } from '../models/RewardResponseSchema.ts';
+import { Skill } from '../models/Skill.ts';
+import { TaskFullResponseSchema } from '../models/TaskFullResponseSchema.ts';
+import { TaskType } from '../models/TaskType.ts';
 
 /**
  * no description

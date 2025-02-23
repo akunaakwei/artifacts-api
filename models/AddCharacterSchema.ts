@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { CharacterSkin } from '../models/CharacterSkin';
-import { HttpFile } from '../http/http';
+import { CharacterSkin } from '../models/CharacterSkin.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class AddCharacterSchema {
     /**

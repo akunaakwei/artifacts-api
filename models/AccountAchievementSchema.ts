@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { AchievementRewardsSchema } from '../models/AchievementRewardsSchema';
-import { AchievementType } from '../models/AchievementType';
-import { HttpFile } from '../http/http';
+import { AchievementRewardsSchema } from '../models/AchievementRewardsSchema.ts';
+import { AchievementType } from '../models/AchievementType.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class AccountAchievementSchema {
     /**

@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { NpcMerchantTransactionSchema } from '../models/NpcMerchantTransactionSchema';
-import { HttpFile } from '../http/http';
+import { NpcMerchantTransactionSchema } from '../models/NpcMerchantTransactionSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class NpcMerchantTransactionResponseSchema {
     'data': NpcMerchantTransactionSchema;

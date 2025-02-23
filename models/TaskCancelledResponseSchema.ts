@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { TaskCancelledSchema } from '../models/TaskCancelledSchema';
-import { HttpFile } from '../http/http';
+import { TaskCancelledSchema } from '../models/TaskCancelledSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class TaskCancelledResponseSchema {
     'data': TaskCancelledSchema;

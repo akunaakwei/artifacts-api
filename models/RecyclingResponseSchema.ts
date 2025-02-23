@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { RecyclingDataSchema } from '../models/RecyclingDataSchema';
-import { HttpFile } from '../http/http';
+import { RecyclingDataSchema } from '../models/RecyclingDataSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class RecyclingResponseSchema {
     'data': RecyclingDataSchema;

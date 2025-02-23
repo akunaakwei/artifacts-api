@@ -10,10 +10,10 @@
  * Do not edit the class manually.
  */
 
-import { CharacterSchema } from '../models/CharacterSchema';
-import { CooldownSchema } from '../models/CooldownSchema';
-import { ItemSchema } from '../models/ItemSchema';
-import { HttpFile } from '../http/http';
+import { CharacterSchema } from '../models/CharacterSchema.ts';
+import { CooldownSchema } from '../models/CooldownSchema.ts';
+import { ItemSchema } from '../models/ItemSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class UseItemSchema {
     /**

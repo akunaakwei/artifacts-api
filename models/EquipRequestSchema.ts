@@ -10,11 +10,11 @@
  * Do not edit the class manually.
  */
 
-import { CharacterSchema } from '../models/CharacterSchema';
-import { CooldownSchema } from '../models/CooldownSchema';
-import { ItemSchema } from '../models/ItemSchema';
-import { ItemSlot } from '../models/ItemSlot';
-import { HttpFile } from '../http/http';
+import { CharacterSchema } from '../models/CharacterSchema.ts';
+import { CooldownSchema } from '../models/CooldownSchema.ts';
+import { ItemSchema } from '../models/ItemSchema.ts';
+import { ItemSlot } from '../models/ItemSlot.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class EquipRequestSchema {
     /**

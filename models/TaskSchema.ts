@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { RewardsSchema } from '../models/RewardsSchema';
-import { TaskType } from '../models/TaskType';
-import { HttpFile } from '../http/http';
+import { RewardsSchema } from '../models/RewardsSchema.ts';
+import { TaskType } from '../models/TaskType.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class TaskSchema {
     /**

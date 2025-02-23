@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { DeleteItemSchema } from '../models/DeleteItemSchema';
-import { HttpFile } from '../http/http';
+import { DeleteItemSchema } from '../models/DeleteItemSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DeleteItemResponseSchema {
     'data': DeleteItemSchema;

@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { MapContentSchema } from '../models/MapContentSchema';
-import { HttpFile } from '../http/http';
+import { MapContentSchema } from '../models/MapContentSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class MapSchema {
     /**

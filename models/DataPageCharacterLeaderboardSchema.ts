@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { CharacterLeaderboardSchema } from '../models/CharacterLeaderboardSchema';
-import { HttpFile } from '../http/http';
+import { CharacterLeaderboardSchema } from '../models/CharacterLeaderboardSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageCharacterLeaderboardSchema {
     'data': Array<CharacterLeaderboardSchema>;

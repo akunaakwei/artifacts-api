@@ -10,10 +10,10 @@
  * Do not edit the class manually.
  */
 
-import { CharacterSchema } from '../models/CharacterSchema';
-import { CooldownSchema } from '../models/CooldownSchema';
-import { GEOrderCreatedSchema } from '../models/GEOrderCreatedSchema';
-import { HttpFile } from '../http/http';
+import { CharacterSchema } from '../models/CharacterSchema.ts';
+import { CooldownSchema } from '../models/CooldownSchema.ts';
+import { GEOrderCreatedSchema } from '../models/GEOrderCreatedSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class GEOrderTransactionSchema {
     /**

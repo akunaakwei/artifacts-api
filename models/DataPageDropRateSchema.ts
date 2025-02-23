@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { DropRateSchema } from '../models/DropRateSchema';
-import { HttpFile } from '../http/http';
+import { DropRateSchema } from '../models/DropRateSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageDropRateSchema {
     'data': Array<DropRateSchema>;

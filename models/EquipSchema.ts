@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { ItemSlot } from '../models/ItemSlot';
-import { HttpFile } from '../http/http';
+import { ItemSlot } from '../models/ItemSlot.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class EquipSchema {
     /**

@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { EventSchema } from '../models/EventSchema';
-import { HttpFile } from '../http/http';
+import { EventSchema } from '../models/EventSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageEventSchema {
     'data': Array<EventSchema>;

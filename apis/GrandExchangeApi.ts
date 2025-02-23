@@ -1,16 +1,16 @@
 // TODO: better import syntax?
-import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi';
-import {Configuration} from '../configuration';
-import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http';
-import {ObjectSerializer} from '../models/ObjectSerializer';
-import {ApiException} from './exception';
-import {canConsumeForm, isCodeInRange} from '../util';
-import {SecurityAuthentication} from '../auth/auth';
+import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi.ts';
+import {Configuration} from '../configuration.ts';
+import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http.ts';
+import {ObjectSerializer} from '../models/ObjectSerializer.ts';
+import {ApiException} from './exception.ts';
+import {canConsumeForm, isCodeInRange} from '../util.ts';
+import {SecurityAuthentication} from '../auth/auth.ts';
 
 
-import { DataPageGEOrderSchema } from '../models/DataPageGEOrderSchema';
-import { DataPageGeOrderHistorySchema } from '../models/DataPageGeOrderHistorySchema';
-import { GEOrderReponseSchema } from '../models/GEOrderReponseSchema';
+import { DataPageGEOrderSchema } from '../models/DataPageGEOrderSchema.ts';
+import { DataPageGeOrderHistorySchema } from '../models/DataPageGeOrderHistorySchema.ts';
+import { GEOrderReponseSchema } from '../models/GEOrderReponseSchema.ts';
 
 /**
  * no description

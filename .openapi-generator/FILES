@@ -16,7 +16,6 @@ MonstersApi.md
 MyAccountApi.md
 MyCharactersApi.md
 NPCsApi.md
-README.md
 ResourcesApi.md
 TasksApi.md
 TokenApi.md
@@ -207,10 +206,8 @@ models/UseItemSchema.ts
 models/ValidationError.ts
 models/ValidationErrorLocInner.ts
 models/all.ts
-package.json
 rxjsStub.ts
 servers.ts
-tsconfig.json
 types/ObjectParamAPI.ts
 types/ObservableAPI.ts
 types/PromiseAPI.ts

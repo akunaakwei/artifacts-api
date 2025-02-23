@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { EffectSubtype } from '../models/EffectSubtype';
-import { EffectType } from '../models/EffectType';
-import { HttpFile } from '../http/http';
+import { EffectSubtype } from '../models/EffectSubtype.ts';
+import { EffectType } from '../models/EffectType.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class EffectSchema {
     /**

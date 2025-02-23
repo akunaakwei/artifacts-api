@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { AchievementSchema } from '../models/AchievementSchema';
-import { HttpFile } from '../http/http';
+import { AchievementSchema } from '../models/AchievementSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class AchievementResponseSchema {
     'data': AchievementSchema;

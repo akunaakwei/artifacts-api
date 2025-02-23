@@ -1,6 +1,5 @@
-import { Observable, from } from '../rxjsStub';
+import { Observable, from } from '../rxjsStub.ts';
 
-export * from './isomorphic-fetch';
 
 /**
  * Represents an HTTP method.
@@ -144,18 +143,7 @@ export class SelfDecodingBody implements ResponseBody {
 
     async text(): Promise<string> {
         const data: Blob = await this.dataSource;
-        // @ts-ignore
-        if (data.text) {
-            // @ts-ignore
-            return data.text();
-        }
-
-        return new Promise<string>((resolve, reject) => {
-            const reader = new FileReader();
-            reader.addEventListener("load", () => resolve(reader.result as string));
-            reader.addEventListener("error", () => reject(reader.error));
-            reader.readAsText(data);
-        });
+        return data.text();
     }
 }
 

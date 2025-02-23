@@ -1,16 +1,16 @@
 // TODO: better import syntax?
-import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi';
-import {Configuration} from '../configuration';
-import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http';
-import {ObjectSerializer} from '../models/ObjectSerializer';
-import {ApiException} from './exception';
-import {canConsumeForm, isCodeInRange} from '../util';
-import {SecurityAuthentication} from '../auth/auth';
+import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi.ts';
+import {Configuration} from '../configuration.ts';
+import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http.ts';
+import {ObjectSerializer} from '../models/ObjectSerializer.ts';
+import {ApiException} from './exception.ts';
+import {canConsumeForm, isCodeInRange} from '../util.ts';
+import {SecurityAuthentication} from '../auth/auth.ts';
 
 
-import { AchievementResponseSchema } from '../models/AchievementResponseSchema';
-import { AchievementType } from '../models/AchievementType';
-import { DataPageAchievementSchema } from '../models/DataPageAchievementSchema';
+import { AchievementResponseSchema } from '../models/AchievementResponseSchema.ts';
+import { AchievementType } from '../models/AchievementType.ts';
+import { DataPageAchievementSchema } from '../models/DataPageAchievementSchema.ts';
 
 /**
  * no description

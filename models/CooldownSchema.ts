@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { ActionType } from '../models/ActionType';
-import { HttpFile } from '../http/http';
+import { ActionType } from '../models/ActionType.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class CooldownSchema {
     /**

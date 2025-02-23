@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { NPCItem } from '../models/NPCItem';
-import { HttpFile } from '../http/http';
+import { NPCItem } from '../models/NPCItem.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageNPCItem {
     'data': Array<NPCItem>;

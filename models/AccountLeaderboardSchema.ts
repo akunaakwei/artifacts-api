@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { AccountStatus } from '../models/AccountStatus';
-import { HttpFile } from '../http/http';
+import { AccountStatus } from '../models/AccountStatus.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class AccountLeaderboardSchema {
     /**

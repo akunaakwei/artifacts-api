@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { ActiveEventSchema } from '../models/ActiveEventSchema';
-import { HttpFile } from '../http/http';
+import { ActiveEventSchema } from '../models/ActiveEventSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class DataPageActiveEventSchema {
     'data': Array<ActiveEventSchema>;

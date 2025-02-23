@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { LogType } from '../models/LogType';
-import { HttpFile } from '../http/http';
+import { LogType } from '../models/LogType.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class LogSchema {
     /**

@@ -1,167 +1,167 @@
-import { ResponseContext, RequestContext, HttpFile, HttpInfo } from '../http/http';
-import { Configuration} from '../configuration'
+import { ResponseContext, RequestContext, HttpFile, HttpInfo } from '../http/http.ts';
+import { Configuration} from '../configuration.ts'
 
-import { AccountAchievementSchema } from '../models/AccountAchievementSchema';
-import { AccountDetails } from '../models/AccountDetails';
-import { AccountDetailsSchema } from '../models/AccountDetailsSchema';
-import { AccountLeaderboardSchema } from '../models/AccountLeaderboardSchema';
-import { AccountLeaderboardType } from '../models/AccountLeaderboardType';
-import { AccountStatus } from '../models/AccountStatus';
-import { AchievementResponseSchema } from '../models/AchievementResponseSchema';
-import { AchievementRewardsSchema } from '../models/AchievementRewardsSchema';
-import { AchievementSchema } from '../models/AchievementSchema';
-import { AchievementType } from '../models/AchievementType';
-import { ActionType } from '../models/ActionType';
-import { ActiveEventSchema } from '../models/ActiveEventSchema';
-import { AddAccountSchema } from '../models/AddAccountSchema';
-import { AddCharacterSchema } from '../models/AddCharacterSchema';
-import { AnnouncementSchema } from '../models/AnnouncementSchema';
-import { BadgeConditionSchema } from '../models/BadgeConditionSchema';
-import { BadgeResponseSchema } from '../models/BadgeResponseSchema';
-import { BadgeSchema } from '../models/BadgeSchema';
-import { BankExtensionSchema } from '../models/BankExtensionSchema';
-import { BankExtensionTransactionResponseSchema } from '../models/BankExtensionTransactionResponseSchema';
-import { BankExtensionTransactionSchema } from '../models/BankExtensionTransactionSchema';
-import { BankGoldTransactionResponseSchema } from '../models/BankGoldTransactionResponseSchema';
-import { BankGoldTransactionSchema } from '../models/BankGoldTransactionSchema';
-import { BankItemTransactionResponseSchema } from '../models/BankItemTransactionResponseSchema';
-import { BankItemTransactionSchema } from '../models/BankItemTransactionSchema';
-import { BankResponseSchema } from '../models/BankResponseSchema';
-import { BankSchema } from '../models/BankSchema';
-import { BlockedHitsSchema } from '../models/BlockedHitsSchema';
-import { ChangePassword } from '../models/ChangePassword';
-import { CharacterFightDataSchema } from '../models/CharacterFightDataSchema';
-import { CharacterFightResponseSchema } from '../models/CharacterFightResponseSchema';
-import { CharacterLeaderboardSchema } from '../models/CharacterLeaderboardSchema';
-import { CharacterLeaderboardType } from '../models/CharacterLeaderboardType';
-import { CharacterMovementDataSchema } from '../models/CharacterMovementDataSchema';
-import { CharacterMovementResponseSchema } from '../models/CharacterMovementResponseSchema';
-import { CharacterResponseSchema } from '../models/CharacterResponseSchema';
-import { CharacterRestDataSchema } from '../models/CharacterRestDataSchema';
-import { CharacterRestResponseSchema } from '../models/CharacterRestResponseSchema';
-import { CharacterSchema } from '../models/CharacterSchema';
-import { CharacterSkin } from '../models/CharacterSkin';
-import { CooldownSchema } from '../models/CooldownSchema';
-import { CraftSchema } from '../models/CraftSchema';
-import { CraftSkill } from '../models/CraftSkill';
-import { CraftingSchema } from '../models/CraftingSchema';
-import { DataPageAccountAchievementSchema } from '../models/DataPageAccountAchievementSchema';
-import { DataPageAccountLeaderboardSchema } from '../models/DataPageAccountLeaderboardSchema';
-import { DataPageAchievementSchema } from '../models/DataPageAchievementSchema';
-import { DataPageActiveEventSchema } from '../models/DataPageActiveEventSchema';
-import { DataPageBadgeSchema } from '../models/DataPageBadgeSchema';
-import { DataPageCharacterLeaderboardSchema } from '../models/DataPageCharacterLeaderboardSchema';
-import { DataPageDropRateSchema } from '../models/DataPageDropRateSchema';
-import { DataPageEffectSchema } from '../models/DataPageEffectSchema';
-import { DataPageEventSchema } from '../models/DataPageEventSchema';
-import { DataPageGEOrderSchema } from '../models/DataPageGEOrderSchema';
-import { DataPageGeOrderHistorySchema } from '../models/DataPageGeOrderHistorySchema';
-import { DataPageItemSchema } from '../models/DataPageItemSchema';
-import { DataPageLogSchema } from '../models/DataPageLogSchema';
-import { DataPageMapSchema } from '../models/DataPageMapSchema';
-import { DataPageMonsterSchema } from '../models/DataPageMonsterSchema';
-import { DataPageNPCItem } from '../models/DataPageNPCItem';
-import { DataPageNPCSchema } from '../models/DataPageNPCSchema';
-import { DataPageResourceSchema } from '../models/DataPageResourceSchema';
-import { DataPageSimpleItemSchema } from '../models/DataPageSimpleItemSchema';
-import { DataPageTaskFullSchema } from '../models/DataPageTaskFullSchema';
-import { DeleteCharacterSchema } from '../models/DeleteCharacterSchema';
-import { DeleteItemResponseSchema } from '../models/DeleteItemResponseSchema';
-import { DeleteItemSchema } from '../models/DeleteItemSchema';
-import { DepositWithdrawGoldSchema } from '../models/DepositWithdrawGoldSchema';
-import { DestinationSchema } from '../models/DestinationSchema';
-import { DropRateSchema } from '../models/DropRateSchema';
-import { DropSchema } from '../models/DropSchema';
-import { EffectResponseSchema } from '../models/EffectResponseSchema';
-import { EffectSchema } from '../models/EffectSchema';
-import { EffectSubtype } from '../models/EffectSubtype';
-import { EffectType } from '../models/EffectType';
-import { EquipRequestSchema } from '../models/EquipRequestSchema';
-import { EquipSchema } from '../models/EquipSchema';
-import { EquipmentResponseSchema } from '../models/EquipmentResponseSchema';
-import { EventContentSchema } from '../models/EventContentSchema';
-import { EventMapSchema } from '../models/EventMapSchema';
-import { EventSchema } from '../models/EventSchema';
-import { FightResult } from '../models/FightResult';
-import { FightSchema } from '../models/FightSchema';
-import { GEBuyOrderSchema } from '../models/GEBuyOrderSchema';
-import { GECancelOrderSchema } from '../models/GECancelOrderSchema';
-import { GECreateOrderTransactionResponseSchema } from '../models/GECreateOrderTransactionResponseSchema';
-import { GEOrderCreatedSchema } from '../models/GEOrderCreatedSchema';
-import { GEOrderCreationrSchema } from '../models/GEOrderCreationrSchema';
-import { GEOrderReponseSchema } from '../models/GEOrderReponseSchema';
-import { GEOrderSchema } from '../models/GEOrderSchema';
-import { GEOrderTransactionSchema } from '../models/GEOrderTransactionSchema';
-import { GETransactionListSchema } from '../models/GETransactionListSchema';
-import { GETransactionResponseSchema } from '../models/GETransactionResponseSchema';
-import { GETransactionSchema } from '../models/GETransactionSchema';
-import { GatheringSkill } from '../models/GatheringSkill';
-import { GeOrderHistorySchema } from '../models/GeOrderHistorySchema';
-import { GoldSchema } from '../models/GoldSchema';
-import { HTTPValidationError } from '../models/HTTPValidationError';
-import { InventorySlot } from '../models/InventorySlot';
-import { ItemResponseSchema } from '../models/ItemResponseSchema';
-import { ItemSchema } from '../models/ItemSchema';
-import { ItemSlot } from '../models/ItemSlot';
-import { ItemType } from '../models/ItemType';
-import { LogSchema } from '../models/LogSchema';
-import { LogType } from '../models/LogType';
-import { MapContentSchema } from '../models/MapContentSchema';
-import { MapContentType } from '../models/MapContentType';
-import { MapResponseSchema } from '../models/MapResponseSchema';
-import { MapSchema } from '../models/MapSchema';
-import { MonsterResponseSchema } from '../models/MonsterResponseSchema';
-import { MonsterSchema } from '../models/MonsterSchema';
-import { MyAccountDetails } from '../models/MyAccountDetails';
-import { MyAccountDetailsSchema } from '../models/MyAccountDetailsSchema';
-import { MyCharactersListSchema } from '../models/MyCharactersListSchema';
-import { NPCItem } from '../models/NPCItem';
-import { NPCResponseSchema } from '../models/NPCResponseSchema';
-import { NPCSchema } from '../models/NPCSchema';
-import { NPCType } from '../models/NPCType';
-import { NpcItemTransactionSchema } from '../models/NpcItemTransactionSchema';
-import { NpcMerchantBuySchema } from '../models/NpcMerchantBuySchema';
-import { NpcMerchantTransactionResponseSchema } from '../models/NpcMerchantTransactionResponseSchema';
-import { NpcMerchantTransactionSchema } from '../models/NpcMerchantTransactionSchema';
-import { RecyclingDataSchema } from '../models/RecyclingDataSchema';
-import { RecyclingItemsSchema } from '../models/RecyclingItemsSchema';
-import { RecyclingResponseSchema } from '../models/RecyclingResponseSchema';
-import { RecyclingSchema } from '../models/RecyclingSchema';
-import { ResourceResponseSchema } from '../models/ResourceResponseSchema';
-import { ResourceSchema } from '../models/ResourceSchema';
-import { ResponseSchema } from '../models/ResponseSchema';
-import { RewardDataResponseSchema } from '../models/RewardDataResponseSchema';
-import { RewardDataSchema } from '../models/RewardDataSchema';
-import { RewardResponseSchema } from '../models/RewardResponseSchema';
-import { RewardsSchema } from '../models/RewardsSchema';
-import { SimpleEffectSchema } from '../models/SimpleEffectSchema';
-import { SimpleItemSchema } from '../models/SimpleItemSchema';
-import { Skill } from '../models/Skill';
-import { SkillDataSchema } from '../models/SkillDataSchema';
-import { SkillInfoSchema } from '../models/SkillInfoSchema';
-import { SkillResponseSchema } from '../models/SkillResponseSchema';
-import { StatusResponseSchema } from '../models/StatusResponseSchema';
-import { StatusSchema } from '../models/StatusSchema';
-import { TaskCancelledResponseSchema } from '../models/TaskCancelledResponseSchema';
-import { TaskCancelledSchema } from '../models/TaskCancelledSchema';
-import { TaskDataSchema } from '../models/TaskDataSchema';
-import { TaskFullResponseSchema } from '../models/TaskFullResponseSchema';
-import { TaskFullSchema } from '../models/TaskFullSchema';
-import { TaskResponseSchema } from '../models/TaskResponseSchema';
-import { TaskSchema } from '../models/TaskSchema';
-import { TaskTradeDataSchema } from '../models/TaskTradeDataSchema';
-import { TaskTradeResponseSchema } from '../models/TaskTradeResponseSchema';
-import { TaskTradeSchema } from '../models/TaskTradeSchema';
-import { TaskType } from '../models/TaskType';
-import { TokenResponseSchema } from '../models/TokenResponseSchema';
-import { UnequipSchema } from '../models/UnequipSchema';
-import { UseItemResponseSchema } from '../models/UseItemResponseSchema';
-import { UseItemSchema } from '../models/UseItemSchema';
-import { ValidationError } from '../models/ValidationError';
-import { ValidationErrorLocInner } from '../models/ValidationErrorLocInner';
+import { AccountAchievementSchema } from '../models/AccountAchievementSchema.ts';
+import { AccountDetails } from '../models/AccountDetails.ts';
+import { AccountDetailsSchema } from '../models/AccountDetailsSchema.ts';
+import { AccountLeaderboardSchema } from '../models/AccountLeaderboardSchema.ts';
+import { AccountLeaderboardType } from '../models/AccountLeaderboardType.ts';
+import { AccountStatus } from '../models/AccountStatus.ts';
+import { AchievementResponseSchema } from '../models/AchievementResponseSchema.ts';
+import { AchievementRewardsSchema } from '../models/AchievementRewardsSchema.ts';
+import { AchievementSchema } from '../models/AchievementSchema.ts';
+import { AchievementType } from '../models/AchievementType.ts';
+import { ActionType } from '../models/ActionType.ts';
+import { ActiveEventSchema } from '../models/ActiveEventSchema.ts';
+import { AddAccountSchema } from '../models/AddAccountSchema.ts';
+import { AddCharacterSchema } from '../models/AddCharacterSchema.ts';
+import { AnnouncementSchema } from '../models/AnnouncementSchema.ts';
+import { BadgeConditionSchema } from '../models/BadgeConditionSchema.ts';
+import { BadgeResponseSchema } from '../models/BadgeResponseSchema.ts';
+import { BadgeSchema } from '../models/BadgeSchema.ts';
+import { BankExtensionSchema } from '../models/BankExtensionSchema.ts';
+import { BankExtensionTransactionResponseSchema } from '../models/BankExtensionTransactionResponseSchema.ts';
+import { BankExtensionTransactionSchema } from '../models/BankExtensionTransactionSchema.ts';
+import { BankGoldTransactionResponseSchema } from '../models/BankGoldTransactionResponseSchema.ts';
+import { BankGoldTransactionSchema } from '../models/BankGoldTransactionSchema.ts';
+import { BankItemTransactionResponseSchema } from '../models/BankItemTransactionResponseSchema.ts';
+import { BankItemTransactionSchema } from '../models/BankItemTransactionSchema.ts';
+import { BankResponseSchema } from '../models/BankResponseSchema.ts';
+import { BankSchema } from '../models/BankSchema.ts';
+import { BlockedHitsSchema } from '../models/BlockedHitsSchema.ts';
+import { ChangePassword } from '../models/ChangePassword.ts';
+import { CharacterFightDataSchema } from '../models/CharacterFightDataSchema.ts';
+import { CharacterFightResponseSchema } from '../models/CharacterFightResponseSchema.ts';
+import { CharacterLeaderboardSchema } from '../models/CharacterLeaderboardSchema.ts';
+import { CharacterLeaderboardType } from '../models/CharacterLeaderboardType.ts';
+import { CharacterMovementDataSchema } from '../models/CharacterMovementDataSchema.ts';
+import { CharacterMovementResponseSchema } from '../models/CharacterMovementResponseSchema.ts';
+import { CharacterResponseSchema } from '../models/CharacterResponseSchema.ts';
+import { CharacterRestDataSchema } from '../models/CharacterRestDataSchema.ts';
+import { CharacterRestResponseSchema } from '../models/CharacterRestResponseSchema.ts';
+import { CharacterSchema } from '../models/CharacterSchema.ts';
+import { CharacterSkin } from '../models/CharacterSkin.ts';
+import { CooldownSchema } from '../models/CooldownSchema.ts';
+import { CraftSchema } from '../models/CraftSchema.ts';
+import { CraftSkill } from '../models/CraftSkill.ts';
+import { CraftingSchema } from '../models/CraftingSchema.ts';
+import { DataPageAccountAchievementSchema } from '../models/DataPageAccountAchievementSchema.ts';
+import { DataPageAccountLeaderboardSchema } from '../models/DataPageAccountLeaderboardSchema.ts';
+import { DataPageAchievementSchema } from '../models/DataPageAchievementSchema.ts';
+import { DataPageActiveEventSchema } from '../models/DataPageActiveEventSchema.ts';
+import { DataPageBadgeSchema } from '../models/DataPageBadgeSchema.ts';
+import { DataPageCharacterLeaderboardSchema } from '../models/DataPageCharacterLeaderboardSchema.ts';
+import { DataPageDropRateSchema } from '../models/DataPageDropRateSchema.ts';
+import { DataPageEffectSchema } from '../models/DataPageEffectSchema.ts';
+import { DataPageEventSchema } from '../models/DataPageEventSchema.ts';
+import { DataPageGEOrderSchema } from '../models/DataPageGEOrderSchema.ts';
+import { DataPageGeOrderHistorySchema } from '../models/DataPageGeOrderHistorySchema.ts';
+import { DataPageItemSchema } from '../models/DataPageItemSchema.ts';
+import { DataPageLogSchema } from '../models/DataPageLogSchema.ts';
+import { DataPageMapSchema } from '../models/DataPageMapSchema.ts';
+import { DataPageMonsterSchema } from '../models/DataPageMonsterSchema.ts';
+import { DataPageNPCItem } from '../models/DataPageNPCItem.ts';
+import { DataPageNPCSchema } from '../models/DataPageNPCSchema.ts';
+import { DataPageResourceSchema } from '../models/DataPageResourceSchema.ts';
+import { DataPageSimpleItemSchema } from '../models/DataPageSimpleItemSchema.ts';
+import { DataPageTaskFullSchema } from '../models/DataPageTaskFullSchema.ts';
+import { DeleteCharacterSchema } from '../models/DeleteCharacterSchema.ts';
+import { DeleteItemResponseSchema } from '../models/DeleteItemResponseSchema.ts';
+import { DeleteItemSchema } from '../models/DeleteItemSchema.ts';
+import { DepositWithdrawGoldSchema } from '../models/DepositWithdrawGoldSchema.ts';
+import { DestinationSchema } from '../models/DestinationSchema.ts';
+import { DropRateSchema } from '../models/DropRateSchema.ts';
+import { DropSchema } from '../models/DropSchema.ts';
+import { EffectResponseSchema } from '../models/EffectResponseSchema.ts';
+import { EffectSchema } from '../models/EffectSchema.ts';
+import { EffectSubtype } from '../models/EffectSubtype.ts';
+import { EffectType } from '../models/EffectType.ts';
+import { EquipRequestSchema } from '../models/EquipRequestSchema.ts';
+import { EquipSchema } from '../models/EquipSchema.ts';
+import { EquipmentResponseSchema } from '../models/EquipmentResponseSchema.ts';
+import { EventContentSchema } from '../models/EventContentSchema.ts';
+import { EventMapSchema } from '../models/EventMapSchema.ts';
+import { EventSchema } from '../models/EventSchema.ts';
+import { FightResult } from '../models/FightResult.ts';
+import { FightSchema } from '../models/FightSchema.ts';
+import { GEBuyOrderSchema } from '../models/GEBuyOrderSchema.ts';
+import { GECancelOrderSchema } from '../models/GECancelOrderSchema.ts';
+import { GECreateOrderTransactionResponseSchema } from '../models/GECreateOrderTransactionResponseSchema.ts';
+import { GEOrderCreatedSchema } from '../models/GEOrderCreatedSchema.ts';
+import { GEOrderCreationrSchema } from '../models/GEOrderCreationrSchema.ts';
+import { GEOrderReponseSchema } from '../models/GEOrderReponseSchema.ts';
+import { GEOrderSchema } from '../models/GEOrderSchema.ts';
+import { GEOrderTransactionSchema } from '../models/GEOrderTransactionSchema.ts';
+import { GETransactionListSchema } from '../models/GETransactionListSchema.ts';
+import { GETransactionResponseSchema } from '../models/GETransactionResponseSchema.ts';
+import { GETransactionSchema } from '../models/GETransactionSchema.ts';
+import { GatheringSkill } from '../models/GatheringSkill.ts';
+import { GeOrderHistorySchema } from '../models/GeOrderHistorySchema.ts';
+import { GoldSchema } from '../models/GoldSchema.ts';
+import { HTTPValidationError } from '../models/HTTPValidationError.ts';
+import { InventorySlot } from '../models/InventorySlot.ts';
+import { ItemResponseSchema } from '../models/ItemResponseSchema.ts';
+import { ItemSchema } from '../models/ItemSchema.ts';
+import { ItemSlot } from '../models/ItemSlot.ts';
+import { ItemType } from '../models/ItemType.ts';
+import { LogSchema } from '../models/LogSchema.ts';
+import { LogType } from '../models/LogType.ts';
+import { MapContentSchema } from '../models/MapContentSchema.ts';
+import { MapContentType } from '../models/MapContentType.ts';
+import { MapResponseSchema } from '../models/MapResponseSchema.ts';
+import { MapSchema } from '../models/MapSchema.ts';
+import { MonsterResponseSchema } from '../models/MonsterResponseSchema.ts';
+import { MonsterSchema } from '../models/MonsterSchema.ts';
+import { MyAccountDetails } from '../models/MyAccountDetails.ts';
+import { MyAccountDetailsSchema } from '../models/MyAccountDetailsSchema.ts';
+import { MyCharactersListSchema } from '../models/MyCharactersListSchema.ts';
+import { NPCItem } from '../models/NPCItem.ts';
+import { NPCResponseSchema } from '../models/NPCResponseSchema.ts';
+import { NPCSchema } from '../models/NPCSchema.ts';
+import { NPCType } from '../models/NPCType.ts';
+import { NpcItemTransactionSchema } from '../models/NpcItemTransactionSchema.ts';
+import { NpcMerchantBuySchema } from '../models/NpcMerchantBuySchema.ts';
+import { NpcMerchantTransactionResponseSchema } from '../models/NpcMerchantTransactionResponseSchema.ts';
+import { NpcMerchantTransactionSchema } from '../models/NpcMerchantTransactionSchema.ts';
+import { RecyclingDataSchema } from '../models/RecyclingDataSchema.ts';
+import { RecyclingItemsSchema } from '../models/RecyclingItemsSchema.ts';
+import { RecyclingResponseSchema } from '../models/RecyclingResponseSchema.ts';
+import { RecyclingSchema } from '../models/RecyclingSchema.ts';
+import { ResourceResponseSchema } from '../models/ResourceResponseSchema.ts';
+import { ResourceSchema } from '../models/ResourceSchema.ts';
+import { ResponseSchema } from '../models/ResponseSchema.ts';
+import { RewardDataResponseSchema } from '../models/RewardDataResponseSchema.ts';
+import { RewardDataSchema } from '../models/RewardDataSchema.ts';
+import { RewardResponseSchema } from '../models/RewardResponseSchema.ts';
+import { RewardsSchema } from '../models/RewardsSchema.ts';
+import { SimpleEffectSchema } from '../models/SimpleEffectSchema.ts';
+import { SimpleItemSchema } from '../models/SimpleItemSchema.ts';
+import { Skill } from '../models/Skill.ts';
+import { SkillDataSchema } from '../models/SkillDataSchema.ts';
+import { SkillInfoSchema } from '../models/SkillInfoSchema.ts';
+import { SkillResponseSchema } from '../models/SkillResponseSchema.ts';
+import { StatusResponseSchema } from '../models/StatusResponseSchema.ts';
+import { StatusSchema } from '../models/StatusSchema.ts';
+import { TaskCancelledResponseSchema } from '../models/TaskCancelledResponseSchema.ts';
+import { TaskCancelledSchema } from '../models/TaskCancelledSchema.ts';
+import { TaskDataSchema } from '../models/TaskDataSchema.ts';
+import { TaskFullResponseSchema } from '../models/TaskFullResponseSchema.ts';
+import { TaskFullSchema } from '../models/TaskFullSchema.ts';
+import { TaskResponseSchema } from '../models/TaskResponseSchema.ts';
+import { TaskSchema } from '../models/TaskSchema.ts';
+import { TaskTradeDataSchema } from '../models/TaskTradeDataSchema.ts';
+import { TaskTradeResponseSchema } from '../models/TaskTradeResponseSchema.ts';
+import { TaskTradeSchema } from '../models/TaskTradeSchema.ts';
+import { TaskType } from '../models/TaskType.ts';
+import { TokenResponseSchema } from '../models/TokenResponseSchema.ts';
+import { UnequipSchema } from '../models/UnequipSchema.ts';
+import { UseItemResponseSchema } from '../models/UseItemResponseSchema.ts';
+import { UseItemSchema } from '../models/UseItemSchema.ts';
+import { ValidationError } from '../models/ValidationError.ts';
+import { ValidationErrorLocInner } from '../models/ValidationErrorLocInner.ts';
 
-import { ObservableAccountsApi } from "./ObservableAPI";
-import { AccountsApiRequestFactory, AccountsApiResponseProcessor} from "../apis/AccountsApi";
+import { ObservableAccountsApi } from "./ObservableAPI.ts";
+import { AccountsApiRequestFactory, AccountsApiResponseProcessor} from "../apis/AccountsApi.ts";
 
 export interface AccountsApiCreateAccountAccountsCreatePostRequest {
     /**
@@ -284,8 +284,8 @@ export class ObjectAccountsApi {
 
 }
 
-import { ObservableAchievementsApi } from "./ObservableAPI";
-import { AchievementsApiRequestFactory, AchievementsApiResponseProcessor} from "../apis/AchievementsApi";
+import { ObservableAchievementsApi } from "./ObservableAPI.ts";
+import { AchievementsApiRequestFactory, AchievementsApiResponseProcessor} from "../apis/AchievementsApi.ts";
 
 export interface AchievementsApiGetAchievementAchievementsCodeGetRequest {
     /**
@@ -369,8 +369,8 @@ export class ObjectAchievementsApi {
 
 }
 
-import { ObservableBadgesApi } from "./ObservableAPI";
-import { BadgesApiRequestFactory, BadgesApiResponseProcessor} from "../apis/BadgesApi";
+import { ObservableBadgesApi } from "./ObservableAPI.ts";
+import { BadgesApiRequestFactory, BadgesApiResponseProcessor} from "../apis/BadgesApi.ts";
 
 export interface BadgesApiGetAllBadgesBadgesGetRequest {
     /**
@@ -447,8 +447,8 @@ export class ObjectBadgesApi {
 
 }
 
-import { ObservableCharactersApi } from "./ObservableAPI";
-import { CharactersApiRequestFactory, CharactersApiResponseProcessor} from "../apis/CharactersApi";
+import { ObservableCharactersApi } from "./ObservableAPI.ts";
+import { CharactersApiRequestFactory, CharactersApiResponseProcessor} from "../apis/CharactersApi.ts";
 
 export interface CharactersApiCreateCharacterCharactersCreatePostRequest {
     /**
@@ -541,8 +541,8 @@ export class ObjectCharactersApi {
 
 }
 
-import { ObservableDefaultApi } from "./ObservableAPI";
-import { DefaultApiRequestFactory, DefaultApiResponseProcessor} from "../apis/DefaultApi";
+import { ObservableDefaultApi } from "./ObservableAPI.ts";
+import { DefaultApiRequestFactory, DefaultApiResponseProcessor} from "../apis/DefaultApi.ts";
 
 export interface DefaultApiGetStatusGetRequest {
 }
@@ -574,8 +574,8 @@ export class ObjectDefaultApi {
 
 }
 
-import { ObservableEffectsApi } from "./ObservableAPI";
-import { EffectsApiRequestFactory, EffectsApiResponseProcessor} from "../apis/EffectsApi";
+import { ObservableEffectsApi } from "./ObservableAPI.ts";
+import { EffectsApiRequestFactory, EffectsApiResponseProcessor} from "../apis/EffectsApi.ts";
 
 export interface EffectsApiGetAllEffectsEffectsGetRequest {
     /**
@@ -652,8 +652,8 @@ export class ObjectEffectsApi {
 
 }
 
-import { ObservableEventsApi } from "./ObservableAPI";
-import { EventsApiRequestFactory, EventsApiResponseProcessor} from "../apis/EventsApi";
+import { ObservableEventsApi } from "./ObservableAPI.ts";
+import { EventsApiRequestFactory, EventsApiResponseProcessor} from "../apis/EventsApi.ts";
 
 export interface EventsApiGetAllActiveEventsEventsActiveGetRequest {
     /**
@@ -740,8 +740,8 @@ export class ObjectEventsApi {
 
 }
 
-import { ObservableGrandExchangeApi } from "./ObservableAPI";
-import { GrandExchangeApiRequestFactory, GrandExchangeApiResponseProcessor} from "../apis/GrandExchangeApi";
+import { ObservableGrandExchangeApi } from "./ObservableAPI.ts";
+import { GrandExchangeApiRequestFactory, GrandExchangeApiResponseProcessor} from "../apis/GrandExchangeApi.ts";
 
 export interface GrandExchangeApiGetGeSellHistoryGrandexchangeHistoryCodeGetRequest {
     /**
@@ -891,8 +891,8 @@ export class ObjectGrandExchangeApi {
 
 }
 
-import { ObservableItemsApi } from "./ObservableAPI";
-import { ItemsApiRequestFactory, ItemsApiResponseProcessor} from "../apis/ItemsApi";
+import { ObservableItemsApi } from "./ObservableAPI.ts";
+import { ItemsApiRequestFactory, ItemsApiResponseProcessor} from "../apis/ItemsApi.ts";
 
 export interface ItemsApiGetAllItemsItemsGetRequest {
     /**
@@ -1013,8 +1013,8 @@ export class ObjectItemsApi {
 
 }
 
-import { ObservableLeaderboardApi } from "./ObservableAPI";
-import { LeaderboardApiRequestFactory, LeaderboardApiResponseProcessor} from "../apis/LeaderboardApi";
+import { ObservableLeaderboardApi } from "./ObservableAPI.ts";
+import { LeaderboardApiRequestFactory, LeaderboardApiResponseProcessor} from "../apis/LeaderboardApi.ts";
 
 export interface LeaderboardApiGetAccountsLeaderboardLeaderboardAccountsGetRequest {
     /**
@@ -1115,8 +1115,8 @@ export class ObjectLeaderboardApi {
 
 }
 
-import { ObservableMapsApi } from "./ObservableAPI";
-import { MapsApiRequestFactory, MapsApiResponseProcessor} from "../apis/MapsApi";
+import { ObservableMapsApi } from "./ObservableAPI.ts";
+import { MapsApiRequestFactory, MapsApiResponseProcessor} from "../apis/MapsApi.ts";
 
 export interface MapsApiGetAllMapsMapsGetRequest {
     /**
@@ -1214,8 +1214,8 @@ export class ObjectMapsApi {
 
 }
 
-import { ObservableMonstersApi } from "./ObservableAPI";
-import { MonstersApiRequestFactory, MonstersApiResponseProcessor} from "../apis/MonstersApi";
+import { ObservableMonstersApi } from "./ObservableAPI.ts";
+import { MonstersApiRequestFactory, MonstersApiResponseProcessor} from "../apis/MonstersApi.ts";
 
 export interface MonstersApiGetAllMonstersMonstersGetRequest {
     /**
@@ -1315,8 +1315,8 @@ export class ObjectMonstersApi {
 
 }
 
-import { ObservableMyAccountApi } from "./ObservableAPI";
-import { MyAccountApiRequestFactory, MyAccountApiResponseProcessor} from "../apis/MyAccountApi";
+import { ObservableMyAccountApi } from "./ObservableAPI.ts";
+import { MyAccountApiRequestFactory, MyAccountApiResponseProcessor} from "../apis/MyAccountApi.ts";
 
 export interface MyAccountApiChangePasswordMyChangePasswordPostRequest {
     /**
@@ -1538,8 +1538,8 @@ export class ObjectMyAccountApi {
 
 }
 
-import { ObservableMyCharactersApi } from "./ObservableAPI";
-import { MyCharactersApiRequestFactory, MyCharactersApiResponseProcessor} from "../apis/MyCharactersApi";
+import { ObservableMyCharactersApi } from "./ObservableAPI.ts";
+import { MyCharactersApiRequestFactory, MyCharactersApiResponseProcessor} from "../apis/MyCharactersApi.ts";
 
 export interface MyCharactersApiActionAcceptNewTaskMyNameActionTaskNewPostRequest {
     /**
@@ -2411,8 +2411,8 @@ export class ObjectMyCharactersApi {
 
 }
 
-import { ObservableNPCsApi } from "./ObservableAPI";
-import { NPCsApiRequestFactory, NPCsApiResponseProcessor} from "../apis/NPCsApi";
+import { ObservableNPCsApi } from "./ObservableAPI.ts";
+import { NPCsApiRequestFactory, NPCsApiResponseProcessor} from "../apis/NPCsApi.ts";
 
 export interface NPCsApiGetAllNpcsNpcsGetRequest {
     /**
@@ -2541,8 +2541,8 @@ export class ObjectNPCsApi {
 
 }
 
-import { ObservableResourcesApi } from "./ObservableAPI";
-import { ResourcesApiRequestFactory, ResourcesApiResponseProcessor} from "../apis/ResourcesApi";
+import { ObservableResourcesApi } from "./ObservableAPI.ts";
+import { ResourcesApiRequestFactory, ResourcesApiResponseProcessor} from "../apis/ResourcesApi.ts";
 
 export interface ResourcesApiGetAllResourcesResourcesGetRequest {
     /**
@@ -2649,8 +2649,8 @@ export class ObjectResourcesApi {
 
 }
 
-import { ObservableTasksApi } from "./ObservableAPI";
-import { TasksApiRequestFactory, TasksApiResponseProcessor} from "../apis/TasksApi";
+import { ObservableTasksApi } from "./ObservableAPI.ts";
+import { TasksApiRequestFactory, TasksApiResponseProcessor} from "../apis/TasksApi.ts";
 
 export interface TasksApiGetAllTasksRewardsTasksRewardsGetRequest {
     /**
@@ -2823,8 +2823,8 @@ export class ObjectTasksApi {
 
 }
 
-import { ObservableTokenApi } from "./ObservableAPI";
-import { TokenApiRequestFactory, TokenApiResponseProcessor} from "../apis/TokenApi";
+import { ObservableTokenApi } from "./ObservableAPI.ts";
+import { TokenApiRequestFactory, TokenApiResponseProcessor} from "../apis/TokenApi.ts";
 
 export interface TokenApiGenerateTokenTokenPostRequest {
 }

@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { SkillDataSchema } from '../models/SkillDataSchema';
-import { HttpFile } from '../http/http';
+import { SkillDataSchema } from '../models/SkillDataSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class SkillResponseSchema {
     'data': SkillDataSchema;

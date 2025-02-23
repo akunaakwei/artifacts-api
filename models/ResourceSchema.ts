@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { DropRateSchema } from '../models/DropRateSchema';
-import { GatheringSkill } from '../models/GatheringSkill';
-import { HttpFile } from '../http/http';
+import { DropRateSchema } from '../models/DropRateSchema.ts';
+import { GatheringSkill } from '../models/GatheringSkill.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class ResourceSchema {
     /**

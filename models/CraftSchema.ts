@@ -10,9 +10,9 @@
  * Do not edit the class manually.
  */
 
-import { CraftSkill } from '../models/CraftSkill';
-import { SimpleItemSchema } from '../models/SimpleItemSchema';
-import { HttpFile } from '../http/http';
+import { CraftSkill } from '../models/CraftSkill.ts';
+import { SimpleItemSchema } from '../models/SimpleItemSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class CraftSchema {
     /**

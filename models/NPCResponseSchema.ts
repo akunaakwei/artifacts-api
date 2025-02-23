@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { NPCSchema } from '../models/NPCSchema';
-import { HttpFile } from '../http/http';
+import { NPCSchema } from '../models/NPCSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class NPCResponseSchema {
     'data': NPCSchema;

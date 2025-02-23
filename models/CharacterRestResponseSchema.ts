@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { CharacterRestDataSchema } from '../models/CharacterRestDataSchema';
-import { HttpFile } from '../http/http';
+import { CharacterRestDataSchema } from '../models/CharacterRestDataSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class CharacterRestResponseSchema {
     'data': CharacterRestDataSchema;

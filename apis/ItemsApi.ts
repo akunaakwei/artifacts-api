@@ -1,17 +1,17 @@
 // TODO: better import syntax?
-import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi';
-import {Configuration} from '../configuration';
-import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http';
-import {ObjectSerializer} from '../models/ObjectSerializer';
-import {ApiException} from './exception';
-import {canConsumeForm, isCodeInRange} from '../util';
-import {SecurityAuthentication} from '../auth/auth';
+import {BaseAPIRequestFactory, RequiredError, COLLECTION_FORMATS} from './baseapi.ts';
+import {Configuration} from '../configuration.ts';
+import {RequestContext, HttpMethod, ResponseContext, HttpFile, HttpInfo} from '../http/http.ts';
+import {ObjectSerializer} from '../models/ObjectSerializer.ts';
+import {ApiException} from './exception.ts';
+import {canConsumeForm, isCodeInRange} from '../util.ts';
+import {SecurityAuthentication} from '../auth/auth.ts';
 
 
-import { CraftSkill } from '../models/CraftSkill';
-import { DataPageItemSchema } from '../models/DataPageItemSchema';
-import { ItemResponseSchema } from '../models/ItemResponseSchema';
-import { ItemType } from '../models/ItemType';
+import { CraftSkill } from '../models/CraftSkill.ts';
+import { DataPageItemSchema } from '../models/DataPageItemSchema.ts';
+import { ItemResponseSchema } from '../models/ItemResponseSchema.ts';
+import { ItemType } from '../models/ItemType.ts';
 
 /**
  * no description

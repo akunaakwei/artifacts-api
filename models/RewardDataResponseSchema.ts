@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { RewardDataSchema } from '../models/RewardDataSchema';
-import { HttpFile } from '../http/http';
+import { RewardDataSchema } from '../models/RewardDataSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class RewardDataResponseSchema {
     'data': RewardDataSchema;

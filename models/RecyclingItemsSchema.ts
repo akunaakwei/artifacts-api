@@ -10,8 +10,8 @@
  * Do not edit the class manually.
  */
 
-import { DropSchema } from '../models/DropSchema';
-import { HttpFile } from '../http/http';
+import { DropSchema } from '../models/DropSchema.ts';
+import { HttpFile } from '../http/http.ts';
 
 export class RecyclingItemsSchema {
     /**
